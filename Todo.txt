@@ -8,3 +8,13 @@ visualization:
 - visualize the energy price trend by canton on a monthly basis from march 2021 to august 2024, color-coded by consumer type and filtered by grid usage price, solar adoption rate, and taxes.
 - produce the above as a dataset
 
+- produce a dataset that shows the energy price tariff trend by canton on a monthly basis from march 2021 to august 2024, and also include when if possible what it is before and after renewable surcharge(incentivized) was implemented -- For this combine values of customer types what is important is that we know the price trend per canton irrespetive of the customer type on a monthly basis
+- visualize the above as the result of phase 1, to show the price trend of each canton.
+- arrange the project structure.
+- produce some interesting insights and visualizations for phase1 and phase2
+- For phase 3:
+    - produce a dataset that shows the correlation of the adoption rate of solar panels and the energy price tariff trend by canton on a monthly basis from march 2021 to august 2024
+    - produce a dataset that shows the correlation of the adoption rate of solar panels and the energy price trend before and after renewable surcharge(incentivized) was implemented by canton on a monthly basis from march 2021 to august 2024
+    - Implement logistic regression to interpret the relationship between the adoption rate of solar panels and the energy price trend by canton on a monthly basis from march 2021 to august 2024
+    - Implement logistic regression to interpret the relationship between the adoption rate of solar panels and the energy price trend before and after renewable surcharge(incentivized) was implemented by canton on a monthly basis from march 2021 to august 2024
+    - visualize the above as the result of phase 3, to show the adoption rate of each canton.
