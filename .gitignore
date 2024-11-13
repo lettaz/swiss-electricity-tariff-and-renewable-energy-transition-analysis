@@ -43,8 +43,6 @@ ENV/
 .DS_Store
 
 # Visualization outputs
-*.png
-*.html
 *.pdf
 
 # Logs
