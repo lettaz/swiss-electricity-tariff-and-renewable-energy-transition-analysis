@@ -1,61 +1,91 @@
-# Swiss Energy Transition Analysis
+# Swiss Energy Transition Analysis (2021-2024)
 
 ## Project Overview
+A comprehensive analysis of Switzerland's energy transition, examining the relationship between electricity tariffs and renewable energy adoption across cantons from 2021 to 2024. The project spans three phases, each building upon previous findings to create a complete understanding of price-driven solar adoption patterns.
 
-A comprehensive analysis of Switzerland's energy transition, focusing on the relationship between electricity tariffs and renewable energy adoption across cantons (2021-2024).
+## Research Questions & Hypotheses
 
-## Research Questions
-
+### Core Questions
 1. How do energy tariffs correlate with renewable energy adoption across Swiss cantons?
 2. What impact do canton-specific tariff incentives have on solar panel installations?
 
-## Hypotheses
-
+### Hypotheses
 - H1: Higher energy prices correlate with increased solar panel adoption
 - H2: Cantons with lower renewable energy tariffs show higher installation rates
 
-## Project Structure
+## Key Findings
 
-## Current Progress
+### Phase 1: Electricity Tariff Analysis
+[Detailed documentation in docs/phase_1.md]
+- Base price average: 0.2060 CHF/kWh
+- Renewable surcharge: 0.0230 CHF/kWh (consistent)
+- Total price average: 0.2290 CHF/kWh
+- Significant price increases between 2022-2023
+- Regional variations in grid usage costs
 
-### Phase 1: Electricity Tariff Analysis ✓
+### Phase 2: Solar Adoption Patterns
+[Detailed documentation in docs/phase_2.md]
+- Total installed capacity: 15,115,209.50 kWp
+- Mean yearly installation: 145,338.55 kWp
+- Regional leaders: Bern and Zurich
+- Significant acceleration in 2023-2024
 
-- Comprehensive analysis of tariff components across cantons
-- Consumer profile impact assessment
-- Temporal trend analysis
-- Regional pricing variations
+### Phase 3: Correlation Analysis
+[Detailed documentation in docs/phase_3.md]
+- Model Performance: R² = 0.183
+- Total Price Impact: Positive coefficient (3.584570)
+- Renewable Surcharge: No significant impact (0.000000)
+- Price Change Effect: Slight negative (-0.239263)
 
-### Phase 2: Renewable Energy Adoption ✓
+## Methodology
 
-- Solar panel installation data analysis
-- Canton-specific adoption rate patterns
+### Data Integration
+Combined analysis of:
+- ElCom Electricity Tariff Dataset
+- Canton Solar Installation Records
+- Renewable Surcharge Implementation Data
 
-## Key Findings with Visualizations (Phase 1)
+## Results Summary
 
-## Key Findings with Visualizations (Phase 2)
+### Hypothesis Testing Results
+1. H1 (Price Impact): PARTIALLY SUPPORTED
+   - Positive correlation with total price
+   - Limited explanatory power (18.3%)
+
+2. H2 (Tariff Effect): NOT SUPPORTED
+   - No significant correlation
+   - Suggests need for alternative incentives
+
+## Limitations & Future Work
+
+### Current Constraints
+1. Data Volume:
+   - 26 cantons × 4 years
+   - Annual granularity masks patterns
+   - Limited timeframe
+
+2. Model Performance:
+   - R² = 0.183 indicates additional factors
+   - Linear assumptions may not capture complexity
+   - Missing socioeconomic variables
+
+### Future Directions
+[Detailed in docs/phase_3.md]
+1. Enhanced Data Collection
+2. Advanced Modeling Approaches
+3. Additional Analysis Methods
 
 ## Data Sources
-
 - Median Electricity Tariff Dataset (ElCom)
-- Energy Reporter Dataset (upcoming)
-
-## Model
-
-Regression
-X -> Y
-
-X = Energy Price, Incentives
-Y = Solar Power Installed
-
-period in canton (month, canton): X[Energy Price, Incentives] -> Y(Solar Power Installed)
-
-Aligned Data set:
-canton, month, Energy Price, Solar Power Installed
+- Energy Reporter Dataset
 
 ## Contributing
-
-Contributions are welcome! Please read our contributing guidelines before submitting pull requests.
+Contributions welcome! Please review our contributing guidelines.
 
 ## License
-
 MIT License
+
+## Documentation References
+- Phase 1: `/docs/phase_1.md` - Electricity Tariff Analysis
+- Phase 2: `/docs/phase_2.md` - Solar Adoption Analysis
+- Phase 3: `/docs/phase_3.md` - Correlation Analysis
